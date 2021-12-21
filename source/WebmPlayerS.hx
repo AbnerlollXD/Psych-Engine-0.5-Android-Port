@@ -196,8 +196,8 @@ class WebmPlayerS extends FlxSprite
 				var compareShit:Float = 50;
 				if (sound.time >= (sound.length * soundMultiplier) + compareShit || sound.time <= (sound.length * soundMultiplier) - compareShit)
 					sound.time = sound.length * soundMultiplier;
-			}
-			if (wasFuckingHit)
+			
+			
 			{
 			if (soundMultiplier == 0)
 			{
