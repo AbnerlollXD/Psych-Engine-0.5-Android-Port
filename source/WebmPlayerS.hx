@@ -218,9 +218,7 @@ class WebmPlayerS extends FlxSprite
 		}
 	}
 	
-	override public function destroy
-        videoplayer.stop();
-        super.destroy();
+	
     }
 }
 
