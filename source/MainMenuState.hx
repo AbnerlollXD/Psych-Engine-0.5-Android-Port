@@ -45,6 +45,7 @@ class MainMenuState extends MusicBeatState
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
 	var camFollowPos:FlxObject;
+	private var char1 Character = 
 	var debugKeys:Array<FlxKey>;
 
 	override function create()
@@ -126,7 +127,11 @@ class MainMenuState extends MusicBeatState
 		}
 
 		FlxG.camera.follow(camFollowPos, null, 1);
-
+		
+		showCharacter = new Character(800, -130, 'menubf', true);
+		showCharacter.setGraphicSize(Std.int(showCharacter.width * 0.8));
+		add(showCharacter);
+		
 		var versionShit:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine v" + psychEngineVersion, 12);
 		versionShit.scrollFactor.set();
 		versionShit.setFormat("VCR OSD Mono", 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
@@ -267,7 +272,7 @@ class MainMenuState extends MusicBeatState
 		menuItems.forEach(function(spr:FlxSprite)
 		{
 			spr.screenCenter(X);
-			spr.x += -300;
+			spr.x += 450;
 		});
 	}
 
