@@ -48,8 +48,6 @@ class MainMenuState extends MusicBeatState
 	var debugKeys:Array<FlxKey>;
 	private var char1:Character = null
 
-	override function create()
-	{
 		#if desktop
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
