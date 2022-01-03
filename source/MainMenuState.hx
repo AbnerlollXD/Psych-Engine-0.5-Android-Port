@@ -57,7 +57,7 @@ class MainMenuState extends MusicBeatState
 
 		
 		
-		FlxCamera.defaultCameras = [camGame];
+		
 
 		transIn = FlxTransitionableState.defaultTransIn;
 		transOut = FlxTransitionableState.defaultTransOut;
