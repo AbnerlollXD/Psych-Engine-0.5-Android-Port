@@ -55,11 +55,6 @@ class MainMenuState extends MusicBeatState
 		#end
 
 
-		
-		camGame new FlxCamera();
-		camAchievement new FlxCamera();
-		camAchievement.bgColor.alpha = 0;
-
 		FlxG.cameras.reset(camGame);
 		FlxG.cameras.add(camAchievement);
 		FlxCamera.defaultCameras = [camGame];
