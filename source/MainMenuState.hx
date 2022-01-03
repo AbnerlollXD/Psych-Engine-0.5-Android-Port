@@ -55,9 +55,9 @@ class MainMenuState extends MusicBeatState
 		#end
 
 
-		WeekData.setDirectoryFromWeek();
+		Weekdata.setDirectoryFromWeek();
 		debugKeys = ClientPrefs.copyKey(ClientPrefs.keyBinds.get('debug_1'));
-
+		
 		camGame = new FlxCamera();
 		camAchievement = new FlxCamera();
 		camAchievement.bgColor.alpha = 0;
