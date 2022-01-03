@@ -48,10 +48,12 @@ class MainMenuState extends MusicBeatState
 	var debugKeys:Array<FlxKey>;
 	private var char1:Character = null
 
+
 		#if desktop
 		// Updating Discord Rich Presence
 		DiscordClient.changePresence("In the Menus", null);
 		#end
+
 
 		WeekData.setDirectoryFromWeek();
 		debugKeys = ClientPrefs.copyKey(ClientPrefs.keyBinds.get('debug_1'));
